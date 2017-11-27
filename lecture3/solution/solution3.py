@@ -101,7 +101,7 @@ class linearRegression(object):
 if __name__ == '__main__':
     model = linearRegression()
     model.load('dataset_1_1.txt')
-    model.setAlpha(2.0)
+    model.setAlpha(2)
     model.featureScaling()
     #model.featureScalingAverage(1024.0)
     theta0, theta1, theta2 = model.gradientDescent(1000)
